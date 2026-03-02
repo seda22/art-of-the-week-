@@ -1,10 +1,51 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Silkscreen', sans-serif;
+body {
+    background-color: antiquewhite;
 }
 
+.main-container {
+    background-color: #FFFFFF;
+    font-family: 'Silkscreen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-left: 50px;
+    width: 1332px;
+    height: 1419px;
+}
+
+.artwork-headline {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: 0;
+}
+.best-artworks{
+    display: flex;
+    flex-direction: row;
+        margin-top: 41px;
+}
+
+.top-artwork-image {
+    width: 473.97px;
+    height: 478px;
+}
+
+.other-top-artworks{
+    width: 227.2px;
+    height: 227.57px;
+}
+
+.other-top-artworks-images{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    row-gap:22.43px;
+    gap:22.4px;
+    margin-left: 29.22px;
+    margin-top: px;
+}
