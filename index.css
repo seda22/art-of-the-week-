@@ -143,6 +143,10 @@ select {
 
 }
 
+.top-sellers-cards{
+    margin-top: 44.23px;
+}
+
 .seller-card {
     position: relative;
     width: 225px;
@@ -211,6 +215,12 @@ select {
     left: 132px;
 }
 
+.top-sellers-cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 26px;
+    gap: 26x;
+}
 
 
 
