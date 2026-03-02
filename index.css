@@ -196,13 +196,19 @@ select {
     margin-top: 59px;
 }
 
-.price{
-font-weight: 400;
-font-size: 14px;
-vertical-align: middle;
-text-align: center;
-margin-top: 10px;
-color: #979797;
+.price {
+    font-weight: 400;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 10px;
+    color: #979797;
+}
+
+.check-mark-div{
+    position: absolute;
+    bottom: 100.26px;
+    left: 132px;
 }
 
 
