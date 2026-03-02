@@ -110,20 +110,20 @@ body {
     margin-left: 29.22px;
 }
 
-.top-sellers-text-dropdown{
+.top-sellers-text-dropdown {
     display: flex;
     flex-direction: row;
-    gap:19px;
+    gap: 19px;
 }
-.top-sellers{
+
+.top-sellers {
     font-family: 'Silkscreen', sans-serif;
-font-weight: 700;
-font-size: 32px;
-margin-top: 123px;
-
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 123px;
 }
 
-select{
+select {
     margin-top: 120px;
     appearance: none;
     color: #FFFFFF;
@@ -131,34 +131,34 @@ select{
     background-position: right 21px center;
     border: 1px solid #6300FF;
     width: 124px;
-height: 47.99px;
-border-radius: 47px;
-border-width: 1px;
+    height: 47.99px;
+    border-radius: 47px;
+    border-width: 1px;
 
-font-family: "Open Sans", sans-serif;
-font-weight: 400;
-font-size: 14px;
-color: #000000;
-padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 20px;
 
 }
 
-.seller-card{
+.seller-card {
     position: relative;
     width: 225px;
-height: 260px;
-border-radius: 20px;
-border-width: 0.5px;
-border: 0.5px solid #C7C7C7;
-box-shadow: 0px 25px 40px 0px #00000003;
+    height: 260px;
+    border-radius: 20px;
+    border-width: 0.5px;
+    border: 0.5px solid #C7C7C7;
+    box-shadow: 0px 25px 40px 0px #00000003;
 }
 
-.seller-background-div{
-    height:127px;
+.seller-background-div {
+    height: 127px;
     width: 225px;
 }
 
-.seller-background{
+.seller-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -166,6 +166,45 @@ box-shadow: 0px 25px 40px 0px #00000003;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
+.seller-avatar-div {
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 67px;
+    left: 65px;
+}
+
+.seller-avatar {
+
+    width: 100%;
+    height: 100%;
+    border-width: 5px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100px;
+}
+
+.seller-texts {
+    font-family: "Open Sans", sans-serif;
+}
+
+.courtney-henry {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 59px;
+}
+
+.price{
+font-weight: 400;
+font-size: 14px;
+vertical-align: middle;
+text-align: center;
+margin-top: 10px;
+color: #979797;
+}
+
 
 
 
