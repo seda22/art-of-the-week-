@@ -12,17 +12,15 @@ body {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    padding-top: 42px;
-    padding-left: 50px;
-    width: 1332px;
-    height: 1419px;
+    width: 100%;
+    max-width: 1332px;
+    margin: 0 auto;
+    padding: 42px 50px;
 }
 
 .artwork-headline {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 1.12;
-    letter-spacing: 0;
+    font-size: 2.5em;
     font-family: 'Silkscreen', sans-serif;
 }
 
@@ -34,8 +32,10 @@ body {
 
 .top-artwork {
     position: relative;
-    width: 473.97px;
-    height: 478px;
+    font-size: 16px;
+    width:100%;
+    max-width: 473.97px;
+    aspect-ratio: 473.97/478; /*height vermeyince bozuldu figmadaki ölçüleri oran verdim mantıklı mı?*/
 }
 
 .top-artwork-image {
@@ -46,37 +46,33 @@ body {
 
 .first-texts {
     position: absolute;
-    left: 18.97px;
-    bottom: 17px;
-    width: 435.29px;
-    height: 78px;
-    border-radius: 15px;
+    left: 4%;
+    bottom: 1em;
+    width: 92%;
+    height: auto;
+    border-radius: 11.25em;
     background: #FFFFFFCC;
-    padding-top: 13px;
-    padding-left: 20.97px;
+    padding: 0.8em 1.2em;
     backdrop-filter: blur(50px)
 }
 
 .the-black {
     font-family: "Funnel Sans", sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: 0;
+    font-size: 1.5em;
 }
 
 .original-series {
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
-    font-size: 15.24px;
-    line-height: 1;
-    letter-spacing: 0;
-    margin-top: 4px;
+    font-size: 1em;
+    margin-top: 0.25em;
 }
 
 .top-artworks-figure {
-    width: 227.2px;
-    height: 227.57px;
+    width:100%;
+    max-width: 227.2px;
+    aspect-ratio: 1/1;
     position: relative;
 }
 
@@ -149,8 +145,9 @@ select {
 
 .seller-card {
     position: relative;
-    width: 225px;
-    height: 260px;
+    width: 100%;
+    max-width: 225px;
+    aspect-ratio: 225/260;
     border-radius: 20px;
     border-width: 0.5px;
     border: 0.5px solid #C7C7C7;
@@ -219,23 +216,47 @@ select {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 26px;
-    gap: 26x;
+    gap: 26px;
 }
 
 
 
 
 /*Responsive Tasarım*/
-@media (min-width:768px) and (max-width:991px) {
+@media screen and (max-width:991px) {
+    .main-container{
+        align-items: center;
+        padding: 42px 20px;
+    }
+    .best-artworks{
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+    }
 
     .other-top-artworks-images {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .top-sellers-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media (min-width:0) and (max-width:767px) {
+@media screen and (max-width:767px) {
 
     .other-top-artworks-images {
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-sellers-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .top-sellers-cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
